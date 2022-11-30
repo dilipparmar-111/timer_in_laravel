@@ -13,6 +13,8 @@
 
             <li><a class="nav-link" href="{{route('sliders.index')}}"><i data-feather="sliders"></i><span>@lang('menubar.sliders')</span></a></li>
 
+            <li><a class="nav-link" href="{{route('products.index')}}"><i data-feather="sliders"></i><span>Products</span></a></li>
+
 {{--            <li class="menu-header">Otika</li>--}}
 {{--            <li class="dropdown">--}}
 {{--                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Forms</span></a>--}}

@@ -33,4 +33,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get('/english', [App\Http\Controllers\HomeController::class, 'english'])->name('english');
 
     Route::resource('/users', App\Http\Controllers\Admin\UsersController::class);
+    Route::resource('/products', App\Http\Controllers\Admin\ProductController::class);
+    Route::get('products-status/{id}',[App\Http\Controllers\Admin\ProductController::class,'product_status'])->name('products.status');
 });
