@@ -36,7 +36,6 @@ class HomeController extends Controller
     public function english(){
         $user =  Auth::user();
         $input['lang'] = 'en';
-//        dd($input['lang']);
         $user->update($input);
         return redirect()->back()->with('success',Lang::get('menubar.lang'));
     }
@@ -44,7 +43,6 @@ class HomeController extends Controller
     public function gujarati(){
         $user =  Auth::user();
         $input['lang'] = 'guj';
-//        dd($input['lang']);
         $user->update($input);
         return redirect()->back()->with('success',Lang::get('menubar.lang'));
     }
